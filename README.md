@@ -8,8 +8,8 @@ More problems will be added gradually.
 
 ## Problems
 
-| # | Title | Solution |
+| # | Title | Difficulty | Solution |
 |---|--------|----------|
-| 1 | Two Sum | [0001-two-sum.py](./0001-two-sum.py) |
-| 2 | Add Two Numbers | [0002-add-two-numbers.py](./0002-add-two-numbers.py) |
-| 3 | Longest Substring Without Repeating Characters | [0003-longest-substring-without-repeating-characters.py](./0003-longest-substring-without-repeating-characters.py) |
+| 1 | Two Sum | Easy | [0001-two-sum.py](./0001-two-sum.py) |
+| 2 | Add Two Numbers | Medium | [0002-add-two-numbers.py](./0002-add-two-numbers.py) |
+| 3 | Longest Substring Without Repeating Characters | Medium | [0003-longest-substring-without-repeating-characters.py](./0003-longest-substring-without-repeating-characters.py) |
