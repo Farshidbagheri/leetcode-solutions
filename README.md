@@ -15,3 +15,5 @@ More problems will be added gradually.
 | 1 | Two Sum | Easy | [0001-two-sum.py](./0001-two-sum.py) |
 | 2 | Add Two Numbers | Medium | [0002-add-two-numbers.py](./0002-add-two-numbers.py) |
 | 3 | Longest Substring Without Repeating Characters | Medium | [0003-longest-substring-without-repeating-characters.py](./0003-longest-substring-without-repeating-characters.py) |
+| 4 | Median of Two Sorted Arrays | Hard | [0004-median-of-two-sorted-arrays.py](./0004-median-of-two-sorted-arrays.py) |
+
