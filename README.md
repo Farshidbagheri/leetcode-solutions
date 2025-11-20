@@ -18,5 +18,6 @@ More problems will be added gradually.
 | 6 | Zigzag Conversion | Medium | [0006-zigzag-conversion.py](./0006-zigzag-conversion.py) |
 | 7 | Reverse Integer | Medium | [0007-reverse-integer.py](./0007-reverse-integer.py) |
 | 8 | String to Integer (atoi) | Medium | [0008-string-to-integer-atoi.py](./0008-string-to-integer-atoi.py) |
+| 9 | Palindrome Number | Easy | [0009-palindrome-number.py](./0009-palindrome-number.py) |
 
 
