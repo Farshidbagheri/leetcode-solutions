@@ -16,3 +16,5 @@ More problems will be added gradually.
 | 4 | Median of Two Sorted Arrays | Hard | [0004-median-of-two-sorted-arrays.py](./0004-median-of-two-sorted-arrays.py) |
 | 5 | Longest Palindromic Substring | Medium | [0005-longest-palindromic-substring.py](./0005-longest-palindromic-substring.py) |
 | 6 | Zigzag Conversion | Medium | [0006-zigzag-conversion.py](./0006-zigzag-conversion.py) |
+| 7 | Reverse Integer | Medium | [0007-reverse-integer.py](./0007-reverse-integer.py) |
+
