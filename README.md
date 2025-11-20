@@ -17,4 +17,6 @@ More problems will be added gradually.
 | 5 | Longest Palindromic Substring | Medium | [0005-longest-palindromic-substring.py](./0005-longest-palindromic-substring.py) |
 | 6 | Zigzag Conversion | Medium | [0006-zigzag-conversion.py](./0006-zigzag-conversion.py) |
 | 7 | Reverse Integer | Medium | [0007-reverse-integer.py](./0007-reverse-integer.py) |
+| 8 | String to Integer (atoi) | Medium | [0008-string-to-integer-atoi.py](./0008-string-to-integer-atoi.py) |
+
 
