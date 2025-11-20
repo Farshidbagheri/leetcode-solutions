@@ -1,65 +1,60 @@
-0014 - Longest Common Prefix (Easy)
-Problem
+# 0014 - Longest Common Prefix (Easy)
 
-Write a function to find the longest common prefix among an array of strings.
+## Problem
+Write a function to find the **longest common prefix** string among an array of strings.
 
-If no common prefix exists → return an empty string "".
+If there is **no** common prefix, return an empty string `""`.
 
-Examples
-Example 1
+---
 
-Input:
-strs = ["flower", "flow", "flight"]
-Output: "fl"
+## Examples
 
-Example 2
+### Example 1
+**Input:**  
+strs = ["flower","flow","flight"]  
+**Output:**  
+"fl"
 
-Input:
-strs = ["dog", "racecar", "car"]
-Output: ""
-Explanation: No common prefix exists.
+---
 
-Solution Idea
-Approach — Vertical Scanning (Simple & Clean)
+### Example 2
+**Input:**  
+strs = ["dog","racecar","car"]  
+**Output:**  
+""  
+**Explanation:** There is no common prefix among the input strings.
 
-We compare characters column-by-column across all strings:
+---
 
-Pick the first string → treat it as the reference.
+## Solution Idea
 
-For each character position:
+### Approach — Vertical Scanning
+Compare characters column-by-column across all strings:
+- Stop as soon as a mismatch is found.
+- Build the prefix until mismatch.
 
-Compare that character with the corresponding character in every other string.
+This works because a prefix must be shared by all strings at the same character positions.
 
-If any mismatch occurs → stop.
+### Complexity
+- **Time:** O(n * m)  
+  (n = number of strings, m = prefix length)  
+- **Space:** O(1)
 
-Everything before the mismatch = longest common prefix.
+---
 
-Why this works?
+## Python Code (Final)
 
-Because the first mismatch in any column immediately breaks the common prefix.
-
-Complexity
-
-Time: O(N * M)
-N = number of strings
-M = length of shortest string
-
-Space: O(1)
-
-Python Code (Final)
+```python
 class Solution:
     def longestCommonPrefix(self, strs: List[str]) -> str:
         if not strs:
             return ""
+
+        first = strs[0]
         
-        prefix = ""
+        for i in range(len(first)):
+            for s in strs[1:]:
+                if i == len(s) or s[i] != first[i]:
+                    return first[:i]
         
-        # Vertical scanning
-        for i in range(len(strs[0])):
-            char = strs[0][i]
-            for s in strs:
-                if i >= len(s) or s[i] != char:
-                    return prefix
-            prefix += char
-        
-        return prefix
+        return first
