@@ -16,4 +16,6 @@ More problems will be added gradually.
 | 2 | Add Two Numbers | Medium | [0002-add-two-numbers.py](./0002-add-two-numbers.py) |
 | 3 | Longest Substring Without Repeating Characters | Medium | [0003-longest-substring-without-repeating-characters.py](./0003-longest-substring-without-repeating-characters.py) |
 | 4 | Median of Two Sorted Arrays | Hard | [0004-median-of-two-sorted-arrays.py](./0004-median-of-two-sorted-arrays.py) |
+| 5 | Longest Palindromic Substring | Medium | [0005-longest-palindromic-substring.py](./0005-longest-palindromic-substring.py) |
+
 
