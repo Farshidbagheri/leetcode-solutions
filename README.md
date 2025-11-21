@@ -32,4 +32,5 @@ More problems will be added gradually.
 | 20 | Valid Parentheses | Easy | [0020-valid-parentheses.md](./0020-valid-parentheses.md) |
 | 21 | Merge Two Sorted Lists | Easy | [0021-Merge-Two-Sorted-Lists.md](./0021-Merge-Two-Sorted-Lists.md) |
 | 22 | Generate Parentheses | Medium | [0022-Generate-Parentheses.md](./0022-Generate-Parentheses.md) |
+| 23 | Merge k-sorted List | Hard| [0023 - Merge k Sorted Lists (Hard)](./0023-merge-k-sorted-lists.md)
 
