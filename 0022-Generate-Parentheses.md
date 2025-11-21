@@ -62,7 +62,6 @@ This guarantees that every generated string is valid without needing extra valid
 
 ## Python Code (Final)
 
-```python
 from typing import List
 
 class Solution:
