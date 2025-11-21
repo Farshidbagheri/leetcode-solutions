@@ -75,15 +75,13 @@ class Solution:
                 result.append(current)
                 return
 
-            # Add '(' if possible
+            # Add '(' if we still have available openings
             if open_count < n:
                 backtrack(current + "(", open_count + 1, close_count)
 
-            # Add ')' only if it remains valid
+            # Add ')' only if it keeps the string valid
             if close_count < open_count:
                 backtrack(current + ")", open_count, close_count + 1)
 
         backtrack("", 0, 0)
         return result
-
-["()"]
