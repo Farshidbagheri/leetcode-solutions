@@ -29,4 +29,5 @@ More problems will be added gradually.
 | 17 | Letter Combinations of a Phone Number | Medium | [0017-Letter-Combinations-Phone-Number.md](./0017-Letter-Combinations-Phone-Number.md) |
 | 18 | 4Sum | Medium | [0018-4Sum.md](./0018-4Sum.md) |
 | 19 | Remove Nth Node From End of List | Medium | [0019-Remove-Nth-Node-From-End-of-List.md](./0019-Remove-Nth-Node-From-End-of-List.md) 
+| 20 | Valid Parentheses | Easy | [0020-valid-parentheses.md](./0020-valid-parentheses.md) |
 
