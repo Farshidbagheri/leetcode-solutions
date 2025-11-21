@@ -31,4 +31,5 @@ More problems will be added gradually.
 | 19 | Remove Nth Node From End of List | Medium | [0019-Remove-Nth-Node-From-End-of-List.md](./0019-Remove-Nth-Node-From-End-of-List.md) 
 | 20 | Valid Parentheses | Easy | [0020-valid-parentheses.md](./0020-valid-parentheses.md) |
 | 21 | Merge Two Sorted Lists | Easy | [0021-Merge-Two-Sorted-Lists.md](./0021-Merge-Two-Sorted-Lists.md) |
+| 22 | Generate Parentheses | Medium | [0022-Generate-Parentheses.md](./0022-Generate-Parentheses.md) |
 
