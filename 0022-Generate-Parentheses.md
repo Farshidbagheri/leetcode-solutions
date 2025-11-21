@@ -2,9 +2,8 @@
 
 ## Problem
 
-Given `n` pairs of parentheses, write a function to generate **all combinations** of well-formed parentheses.
-
-Return the answer in **any order**.
+Given `n` pairs of parentheses, write a function to generate all combinations of well-formed parentheses.  
+Return the answer in any order.
 
 ---
 
@@ -12,73 +11,76 @@ Return the answer in **any order**.
 
 **Example 1**
 
-Input:
-```text
-n = 3
+Input:  
+`n = 3`  
+Output:  
+`["((()))","(()())","(())()","()(())","()()()"]`
 
-["((()))","(()())","(())()","()(())","()()()"]
+**Example 2**
 
+Input:  
+`n = 1`  
+Output:  
+`["()"]`
 
 ---
 
 ## Intuition
 
-A valid parentheses sequence must follow two rules:
+A well-formed parentheses string must satisfy:
 
-1. The number of opening parentheses `'('` can never exceed `n`.
-2. At any point, the number of closing parentheses `')'` must not exceed the number of opening ones.
+- The number of opening parentheses `'('` never exceeds `n`.
+- At any point, the number of closing parentheses `')'` cannot exceed the number of opening ones.
+- The final length must be exactly `2 * n`.
 
-This makes **Backtracking** the ideal solution:
-
-- We build the string step-by-step.
-- At each step, we either:
-  - Add `'('` if we still have some remaining.
-  - Add `')'` only if we already added more `'('` than `')'`.
-
-This guarantees that every generated string is valid without needing extra validation.
+This structure naturally fits a **backtracking** approach:
+- Add `'('` when possible.
+- Add `')'` only if it keeps the string valid.
+- Build step-by-step until the full valid string is formed.
 
 ---
 
 ## Algorithm
 
-1. Use a helper function `backtrack(current, open_count, close_count)`  
-2. If `len(current) == 2 * n`, append it to the result.
-3. If `open_count < n`, add `'('` and continue recursion.
-4. If `close_count < open_count`, add `')'` and continue recursion.
-5. Return the list of all generated combinations.
+1. Create a result list to store valid combinations.
+2. Use recursive backtracking with arguments:
+   - `current`: string built so far
+   - `open_count`: number of `'('` used
+   - `close_count`: number of `')'` used
+3. If the length of `current` is `2 * n`, store it.
+4. If `open_count < n`, add `'('` and recurse.
+5. If `close_count < open_count`, add `')'` and recurse.
+6. Return the final list.
 
 ---
 
 ## Complexity
 
 - **Time Complexity:**  
-  The number of valid combinations equals the `n`-th Catalan number:  
-  **O(4ⁿ / √n)**
-
+  The number of valid combinations is the n-th Catalan number: ~`O(4^n / sqrt(n))`.
 - **Space Complexity:**  
-  Maximum recursion depth is `O(n)` and output size is `O(Cₙ)`.
+  Recursive depth: `O(n)`  
+  Output size: `O(Cn)` (Catalan number)
 
 ---
 
-## Python Code (Final)
+## Python Code
 
+```python
 from typing import List
 
 class Solution:
     def generateParenthesis(self, n: int) -> List[str]:
         result: List[str] = []
 
-        def backtrack(current: str, open_count: int, close_count: int) -> None:
-            # If the current string is complete, store it
+        def backtrack(current: str, open_count: int, close_count: int):
             if len(current) == 2 * n:
                 result.append(current)
                 return
 
-            # Add '(' if we still have available openings
             if open_count < n:
                 backtrack(current + "(", open_count + 1, close_count)
 
-            # Add ')' only if it keeps the string valid
             if close_count < open_count:
                 backtrack(current + ")", open_count, close_count + 1)
 
