@@ -33,4 +33,5 @@ More problems will be added gradually.
 | 21 | Merge Two Sorted Lists | Easy | [0021-Merge-Two-Sorted-Lists.md](./0021-Merge-Two-Sorted-Lists.md) |
 | 22 | Generate Parentheses | Medium | [0022-Generate-Parentheses.md](./0022-Generate-Parentheses.md) |
 | 23 | Merge k-sorted List | Hard| [0023 - Merge k Sorted Lists (Hard)](./0023-merge-k-sorted-lists.md)
+| 24 | Swap Nodes in Pairs | Medium | [0024-swap-nodes-in-pairs.md](./0024-swap-nodes-in-pairs.md) |
 
